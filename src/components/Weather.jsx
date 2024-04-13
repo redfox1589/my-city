@@ -31,9 +31,15 @@ export default function Weather() {
           <StatisticValue>{Math.round(data.main.temp)}</StatisticValue>
           <StatisticLabel>Температура, °C</StatisticLabel>
         </Statistic>
+
         <Statistic color='red' inverted>
           <StatisticValue>{Math.round(data.main.pressure)}</StatisticValue>
           <StatisticLabel>Давление, мм рт.ст</StatisticLabel>
+        </Statistic>
+
+        <Statistic color='teal' inverted>
+          <StatisticValue>{Math.round(data.wind.speed)}</StatisticValue>
+          <StatisticLabel>Ветер, м/с</StatisticLabel>
         </Statistic>
       </Segment>
       ): (
