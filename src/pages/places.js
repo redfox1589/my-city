@@ -1,4 +1,5 @@
 import React from "react";
+import Map from "../components/Map";
 
 const Places = () => {
     return (
@@ -13,6 +14,7 @@ const Places = () => {
             <h1>
                 Интересные места в Саранске.
             </h1>
+            <Map />
         </div>
     );
 };
