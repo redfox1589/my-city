@@ -33,8 +33,8 @@ export default function Weather() {
         </Statistic>
 
         <Statistic color='red' inverted>
-          <StatisticValue>{Math.round(data.main.pressure)}</StatisticValue>
-          <StatisticLabel>Давление, мм рт.ст</StatisticLabel>
+          <StatisticValue>{Math.round(data.main.pressure/1.333)}</StatisticValue>
+          <StatisticLabel>Давление, мм рт. ст.</StatisticLabel>
         </Statistic>
 
         <Statistic color='teal' inverted>
